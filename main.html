@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+  <link rel="stylesheet" href="main.css">
+  <title>My personal web</title>
+</head>
+<body>
+  <button id="open-side-button" onclick="openSidebar()">
+    <i class="fa-solid fa-bars open-icon"></i>
+  </button>
+
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li>
+          <button id="close-side-button" onclick="closeSidebar()">
+            <i class="fa-solid fa-xmark close-icon"></i>
+          </button>
+        </li>
+       
+        <li class="home-li"><a class="active-link" href="main.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="codeStore.html">code Store</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html" class="accent-link">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p>hello projecter</p>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="main.css">
+  <title>My personal web</title>
+  <style>
+    .code-container {
+        position: relative;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        padding: 25px 25px;
+    }
+    pre {
+        background: #2d2d2d;
+        padding: 15px;
+        border-radius: 8px;
+        font-family: monospace;
+        color: #ddd;
+        white-space: pre-wrap; 
+        overflow: auto;
+    }
+    .btn-copy {
+        position:absolute;
+        top: 8%;
+        right: 8%;
+        background: #444;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .btn-copy:hover {
+        background: #666;
+    }
+
+    @media ( max-width: 600px) {
+        pre {
+            font-size: 14px;
+        }
+    }
+    
+        
+    
+  </style>
+</head>
+<body>
+  <button id="open-side-button" onclick="openSidebar()">
+    <i class="fa-solid fa-bars open-icon"></i>
+  </button>
+
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li>
+          <button id="close-side-button" onclick="closeSidebar()">
+            <i class="fa-solid fa-xmark close-icon"></i>
+          </button>
+        </li>
+        
+        <li class="home-li"><a class="active-link" href="main.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="codeStore.html">code Store</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.htm" class="accent-link">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <h3></h3>
+    <div class="code-container" >
+        <button class="btn-copy" onclick="copyCode()">copy</button>
+    <pre><code>
+   const navbar = document.getElementById('navbar');
+
+function openSidebar() {
+  navbar.classList.add('show');
+}
+
+function closeSidebar() {
+  navbar.classList.remove('show');
+}
+
+    </code></pre>
+</div>
+  </main>
+   <p>hello storer</p>
+  <script src="main.js" defer></script>
+</body>
+</html>
